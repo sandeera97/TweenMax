@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"crossorigin="anonymous">  
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="left_sec">
+                    <h1>Duis aute irure dolor in reprehenderit</h1>
+                    <button id="cta">see more</button>
+                </div>
+            </div>
+
+            <div class="col-lg-6 right_sec">
+                <img class="light" src="idea.png">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js" integrity="sha512-O+atZ/gABlcFlpIoLQR04f72qHqZWKwTVsQZHqk/8VE2nrzDlnqhXbnXP7Gh/TyhpPT8tEUm5A580GG8AloHTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.getElementById('cta').addEventListener('click', function(){
+            TweenMax.to('.right_sec', 1, {scaleY:1, height:'100vh', ease: "power3.out"});
+            TweenMax.to('.light',1, {opacity:1, y:0, delay: 1, ease: "back.out(1.7)"});
+            TweenMax.to('p',1,{opacity: 1, y:20, delay:1.4});
+            TweenMax.to('.box',1, {opacity:1, scale: 1, delay: 1, ease: "elastic.out(1, 0.3)"});
+        })
+    </script>
+</body>
+</html>

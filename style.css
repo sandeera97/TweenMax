@@ -1,0 +1,60 @@
+.left_sec {
+  height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 35% 20%;
+}
+
+.left_sec h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #cd0000;
+}
+
+.left_sec button {
+  background: #fff;
+  border: 1px solid #000;
+  margin-top: 40px;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.right_sec {
+  background: #a7ffb2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+
+.right_sec img {
+  position: absolute;
+  top: 32%;
+  left: 10%;
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+.right_sec p {
+  position: absolute;
+  top: 35%;
+  width: 458px;
+  left: 40%;
+  font-size: 28px;
+  opacity: 0;
+}
+
+.box {
+  border: 5px solid #537980;
+  height: 415px;
+  width: 630px;
+  position: absolute;
+  top: 24%;
+  right: 43%;
+  opacity: 0;
+  transform: scale(0);
+}
